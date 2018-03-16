@@ -1,0 +1,43 @@
+{{ define "Create" }}
+  {{ template "Header" }}
+   <h2>Create a new one of Person</h2>
+   <form class="form-horizontal" method="POST" action="insert">
+       <div class="form-group">
+       <label class="control-label col-sm-2" for "identity"> Identity Number :</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="identity" placeholder="--Enter Identity Number--" name="identity">
+        </div>
+       </div>
+       <div class="form-group">
+       <label class="control-label col-sm-2" for "fullname"> Fullname  :</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="fullname" placeholder="--Enter as same as on your Identity Name--" name="fullname">
+         </div>
+       </div>
+       <div class="form-group">
+       <label class="control-label col-sm-2" for "address"> Address :</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="address" placeholder="--just your County and Region--" name="address">
+        </div>
+       </div>
+       <div class="form-group">
+       <label class="control-label col-sm-2" for "telnum"> Phone Number :</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="telnum" placeholder="--We will secure your number--" name="telnum">
+        </div>
+       </div>
+       <div class="form-group">
+       <label class="control-label col-sm-2" for "email"> Email :</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="email" placeholder="--make sure your email is actived--" name="email">
+        </div>
+       </div>
+       <div class="form-group">
+             <div class="col-sm-offset-2 col-sm-10">
+               <button type="submit" class="btn btn-default">Save</button>
+             </div>
+           </div>
+         </form>
+       </div>
+  {{ template "Footer" }}
+{{ end }}

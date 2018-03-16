@@ -1,0 +1,12 @@
+{{ define "Show" }}
+  {{ template "Header" }}
+    <h2> Register {{ .Id }} </h2>
+      <p>Identity Number: {{ .Identity }}</p>
+      <p>Fullname:  {{ .Fullname }}</p>
+      <p>Address: {{ .Address }}</p>
+      <p>Phone Number:  {{ .Telnum }}</p>
+      <p>Email: {{ .Email }}</p>
+      <br /> <a href="/edit?id={{ .Id }}">Edit</a><a href="/delete?id={{ .Id }}">Delete</a></p>
+  {{ template "Footer" }}
+{{ end }}
+
